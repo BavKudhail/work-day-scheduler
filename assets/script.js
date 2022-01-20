@@ -6,7 +6,7 @@ function colorTimeBlock() {
   var currentHour = moment().hours();
 
   $(".time-block").each(function () {
-    var hourBlock = parseInt($(this).attr("id"));
+    var hourBlock = parseInt($(this).parent().attr("id"));
 
     if (currentHour > hourBlock) {
       $(this).addClass("past");
@@ -24,6 +24,8 @@ colorTimeBlock();
 $(".saveBtn").on("click", function () {
   var text = $(this).siblings(".description").val();
   var hour = $(this).parent().attr("id");
+
+  console.log(hour);
 
   localStorage.setItem(hour, text);
 });
@@ -43,7 +45,7 @@ $("#17 .description").val(localStorage.getItem("17"));
 $("#clear-btn").on("click", function () {
   localStorage.clear();
   $("#9 .description").val(" ");
-  $("#10.description").val(" ");
+  $("#10 .description").val(" ");
   $("#11 .description").val(" ");
   $("#12 .description").val(" ");
   $("#13 .description").val(" ");
