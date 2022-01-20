@@ -37,8 +37,6 @@ THEN the saved events persist
 ## Application Screenshot
 
 ![application-screenshot-1](https://raw.githubusercontent.com/BavKudhail/code-quiz-app/main/assets/images/screenshot%201.JPG)
-![application-screenshot-2](https://raw.githubusercontent.com/BavKudhail/code-quiz-app/main/assets/images/screenshot%202.JPG)
-![application-screenshot-3](https://raw.githubusercontent.com/BavKudhail/code-quiz-app/main/assets/images/screenshot%203.JPG)
 
 ## The Learning Loop
 
