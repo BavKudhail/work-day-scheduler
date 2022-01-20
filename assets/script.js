@@ -16,7 +16,6 @@ function colorTimeBlock() {
       $(this).addClass("future");
     }
   });
-  colorTimeBlock();
 }
 
 colorTimeBlock();
@@ -32,10 +31,24 @@ $(".saveBtn").on("click", function () {
 // get from local storage
 $("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
-$("11 .description").val(localStorage.getItem("11"));
-$("12 .description").val(localStorage.getItem("12"));
-$("13 .description").val(localStorage.getItem("13"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
 $("#14 .description").val(localStorage.getItem("14"));
 $("#15 .description").val(localStorage.getItem("15"));
 $("#16 .description").val(localStorage.getItem("16"));
 $("#17 .description").val(localStorage.getItem("17"));
+
+// clear local storage
+$("#clear-btn").on("click", function () {
+  localStorage.clear();
+  $("#9 .description").val(" ");
+  $("#10.description").val(" ");
+  $("#11 .description").val(" ");
+  $("#12 .description").val(" ");
+  $("#13 .description").val(" ");
+  $("#14 .description").val(" ");
+  $("#15 .description").val(" ");
+  $("#16 .description").val(" ");
+  $("#17 .description").val(" ");
+});
