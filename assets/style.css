@@ -18,10 +18,6 @@ textarea {
   border-radius: 0;
   border-bottom: 2px solid black;
 }
-.large-container {
-  background-color: rgb(55, 55, 55);
-}
-
 .description {
   white-space: pre-wrap;
 }
